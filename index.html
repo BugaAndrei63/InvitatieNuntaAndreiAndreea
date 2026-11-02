@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="style.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -28,8 +29,8 @@
   </div>
 
   <div class="hero">
-    <video autoplay muted loop playsinline>
-      <source src="intro-video.webm" type="video/webm">
+    <video autoplay muted loop playsinline preload="auto" poster="intro-poster.jpg" aria-hidden="true" tabindex="-1">
+      <source src="hero-video.mp4" type="video/mp4">
     </video>
 
     <div class="hero-text">
@@ -40,6 +41,14 @@
       <div class="date">22.05.2027</div>
     </div>
   </div>
+
+  <section class="invitation">
+    <p class="section-subtitle">O zi de neuitat</p>
+    <h1 class="invitation-title">Vă invităm cu drag</h1>
+    <p class="invitation-text">
+      Să ne fiți alături în ziua în care vom spune „Da” și vom sărbători începutul poveștii noastre împreună.
+    </p>
+  </section>
 
   <section class="family">
     <div class="family-title">Alături de părinții:</div>
@@ -59,32 +68,6 @@
     <div class="nasi">
       <p>Cristi & Carmen</p>
       <p>Gorgan</p>
-    </div>
-  </section>
-
-  <section class="countdown-section">
-    <h1>Numărătoare inversă</h1>
-    <p class="subtitle">
-      Până la cea mai specială zi din viața noastră
-    </p>
-
-    <div class="countdown">
-      <div class="box">
-        <span class="number" id="days">0</span>
-        zile
-      </div>
-      <div class="box">
-        <span class="number" id="hours">0</span>
-        ore
-      </div>
-      <div class="box">
-        <span class="number" id="minutes">0</span>
-        minute
-      </div>
-      <div class="box">
-        <span class="number" id="seconds">0</span>
-        secunde
-      </div>
     </div>
   </section>
 
@@ -129,6 +112,8 @@
       <i class="fas fa-glass-cheers"></i>
     </div>
 
+    <p class="section-subtitle">RSVP</p>
+    <h2 class="rsvp-title">Confirmați prezența</h2>
     <p class="rsvp-text">
       Dragii noștri, ne-am bucura nespus să fiți alături de noi în cea mai specială zi!
     </p>
@@ -136,23 +121,41 @@
     <div class="rsvp-contacts">
       <div>
         <p><strong>Andrei:</strong></p>
-        <p>0773 889 443</p>
+        <p><a href="tel:+40773889443">0773 889 443</a></p>
       </div>
 
       <div>
         <p><strong>Andreea:</strong></p>
-        <p>0768 244 278</p>
+        <p><a href="tel:+40768244278">0768 244 278</a></p>
       </div>
     </div>
   </section>
 
-  <div class="final">
-    <div class="names">Andrei & Andreea</div>
-    <div class="divider">
-      <span><i class="fas fa-heart"></i></span>
+  <section class="countdown-section">
+    <h1>Numărătoare inversă</h1>
+    <p class="subtitle">
+      Până la cea mai specială zi din viața noastră
+    </p>
+
+    <div class="countdown">
+      <div class="box">
+        <span class="number" id="days">0</span>
+        zile
+      </div>
+      <div class="box">
+        <span class="number" id="hours">0</span>
+        ore
+      </div>
+      <div class="box">
+        <span class="number" id="minutes">0</span>
+        minute
+      </div>
+      <div class="box">
+        <span class="number" id="seconds">0</span>
+        secunde
+      </div>
     </div>
-    <div class="date">22.05.2027</div>
-  </div>
+  </section>
 
 </div>
 
